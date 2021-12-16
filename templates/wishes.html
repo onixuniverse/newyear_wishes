@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}<title>Новый год 2022</title>{% endblock %}
+    <link rel="stylesheet" href="{% static 'wishes/css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="{% static 'wishes/favicon.ico' %}">
+</head>
+<body>
+    <div class="wish"><p>{{ random_wish }}</p></div>
+</body>
+</html>
